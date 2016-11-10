@@ -6,10 +6,10 @@
 namespace Ports {
 
 	namespace CANBusIDs {
-		const uint32_t BACK_LEFT_MOTOR = 0,
-					   BACK_RIGHT_MOTOR = 1,
-					   FRONT_LEFT_MOTOR = 2,
-					   FRONT_RIGHT_MOTOR = 3;
+		const uint32_t FRONT_LEFT_MOTOR = 0,
+					   FRONT_RIGHT_MOTOR = 1,
+					   BACK_LEFT_MOTOR = 2,
+					   BACK_RIGHT_MOTOR = 3;
 	}
 }
 

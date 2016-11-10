@@ -6,7 +6,8 @@ class Drive_Base : public Subsystem {
 public:
 	Drive_Base();
 	void InitDefaultCommand();
-	void set_motors_normalized(float odd, float even);
+	void set_omni_motors_normalized(float front_right_motor, float front_left_motor, float back_right_motor, float back_left_motor);
+	void set_tank_motors_normalized(float left, float right);
 private:
 	CANTalon *front_left_motor,
 			 *front_right_motor,
