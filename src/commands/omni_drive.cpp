@@ -20,7 +20,7 @@ void Omni_Drive::Execute() {
 
 	//ADD DEADZONE
 
-	if ((left_stick_y == 0) && (left_stick_x == 0) && (right_stick_y == 0) && (right_stick_x == 0)) {
+	if ((left_stick_y == 0) && (left_stick_x == 0) && (right_stick_x == 0)) {
 		Subsystems::drive_base->set_omni_motors_normalized(0, 0, 0, 0);
 		return;
 	}
@@ -64,5 +64,5 @@ void Omni_Drive::End() {
 }
 
 bool Omni_Drive::IsFinished() {
-	return false;
+	return UI::drive_toggle;
 }

@@ -10,9 +10,4 @@ public:
 	void End();
 	bool IsFinished();
 	void Interrupted() {};
-
-	float left_stick_x = 0;
-	float left_stick_y = 0;
-	float right_stick_x = 0;
-	float right_stick_y = 0;
 };

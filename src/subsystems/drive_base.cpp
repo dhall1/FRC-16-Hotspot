@@ -1,5 +1,6 @@
 #include "drive_base.hpp"
 #include "../port_mapping.hpp"
+#include "../commands/omni_drive.hpp"
 #include <WPILib.h>
 
 Drive_Base::Drive_Base() :
@@ -16,7 +17,7 @@ scale (0.5) {
 }
 
 void Drive_Base::InitDefaultCommand() {
-
+	SetDefaultCommand( new Omni_Drive() );
 }
 
 void Drive_Base::set_omni_motors_normalized(float front_right_motor, float front_left_motor, float back_right_motor, float back_left_motor) {

@@ -29,7 +29,7 @@ void Tank_Drive::End() {
 }
 
 bool Tank_Drive::IsFinished() {
-	return false;
+	return !UI::drive_toggle;
 }
 
 void Tank_Drive::Interrupted() {
