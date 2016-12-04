@@ -1,0 +1,13 @@
+# Metadata
+.metadata/
+
+# Any project files
+*.project
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Final build data
+FRCUserProgram
