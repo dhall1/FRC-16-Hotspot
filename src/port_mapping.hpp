@@ -5,7 +5,7 @@
 
 namespace Ports {
 
-	namespace CANBusIDs {
+	namespace PWMBusIDs {
 		const uint32_t FRONT_LEFT_MOTOR = 0,
 					   FRONT_RIGHT_MOTOR = 1,
 					   BACK_LEFT_MOTOR = 2,

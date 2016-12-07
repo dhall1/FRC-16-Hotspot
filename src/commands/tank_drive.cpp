@@ -13,9 +13,9 @@ Tank_Drive::Tank_Drive() {
 
 void Tank_Drive::Execute() {
 	//Left side
-	left_stick_y = UI::controller->get_left_y();
+	float left_stick_y = UI::controller->get_left_y();
 	//Right side
-	right_stick_y = UI::controller->get_right_y();
+	float right_stick_y = UI::controller->get_right_y();
 
 	Subsystems::drive_base->set_tank_motors_normalized (
 		scale_input(left_stick_y),
@@ -29,7 +29,8 @@ void Tank_Drive::End() {
 }
 
 bool Tank_Drive::IsFinished() {
-	return !UI::drive_toggle;
+//	return !UI::drive_toggle;
+	return false;
 }
 
 void Tank_Drive::Interrupted() {

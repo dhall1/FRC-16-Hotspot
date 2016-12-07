@@ -12,11 +12,11 @@ Omni_Drive::Omni_Drive() {
 
 void Omni_Drive::Execute() {
 	//Turn
-	float right_stick_x = UI::controller->get_right_x();
+	float right_stick_x = 0;//UI::controller->get_right_x();
 
 	//Strafe
-	float left_stick_y = UI::controller->get_left_y();
-	float left_stick_x = UI::controller->get_left_x();
+	float left_stick_y = 0;//UI::controller->get_left_y();
+	float left_stick_x = 0;//UI::controller->get_left_x();
 
 	//ADD DEADZONE
 
@@ -64,5 +64,10 @@ void Omni_Drive::End() {
 }
 
 bool Omni_Drive::IsFinished() {
-	return UI::drive_toggle;
+//	return UI::drive_toggle;
+	return false;
+}
+
+void Omni_Drive::Interrupted() {
+	Subsystems::drive_base->set_omni_motors_normalized(0, 0, 0, 0);
 }

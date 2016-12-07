@@ -9,5 +9,5 @@ public:
 	void Execute();
 	void End();
 	bool IsFinished();
-	void Interrupted() {};
+	void Interrupted();
 };

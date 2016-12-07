@@ -2,7 +2,7 @@
 
 #include <WPILib.h>
 
-class Cambiar_Drive : public CommandGroup {
+class Change_Drive : public CommandGroup {
 public:
-	Cambiar_Drive();
+	Change_Drive();
 };
